@@ -1,804 +1,1008 @@
 {
-  "terms": [
-    {
-      "id": 1,
-      "term": "and a"
-    },
-    {
-      "id": 2,
-      "term": "in the"
-    },
-    {
-      "id": 3,
-      "term": "with a"
-    },
-    {
-      "id": 4,
-      "term": "to the"
-    },
-    {
-      "id": 5,
-      "term": "of the"
-    },
-    {
-      "id": 6,
-      "term": "the home"
-    },
-    {
-      "id": 7,
-      "term": "this home"
-    },
-    {
-      "id": 8,
-      "term": "is a"
-    },
-    {
-      "id": 9,
-      "term": "perfect for"
-    },
-    {
-      "id": 10,
-      "term": "access to"
-    },
-    {
-      "id": 11,
-      "term": "living room"
-    },
-    {
-      "id": 12,
-      "term": "a private"
-    },
-    {
-      "id": 13,
-      "term": "ideal for"
-    },
-    {
-      "id": 14,
-      "term": "welcome to"
-    },
-    {
-      "id": 15,
-      "term": "primary suite"
-    },
-    {
-      "id": 16,
-      "term": "and the"
-    },
-    {
-      "id": 17,
-      "term": "in a"
-    },
-    {
-      "id": 18,
-      "term": "the kitchen"
-    },
-    {
-      "id": 19,
-      "term": "from the"
-    },
-    {
-      "id": 20,
-      "term": "one of"
-    },
-    {
-      "id": 21,
-      "term": "a large"
-    },
-    {
-      "id": 22,
-      "term": "offers a"
-    },
-    {
-      "id": 23,
-      "term": "a spacious"
-    },
-    {
-      "id": 24,
-      "term": "on a"
-    },
-    {
-      "id": 25,
-      "term": "to a"
-    },
-    {
-      "id": 26,
-      "term": "and an"
-    },
-    {
-      "id": 27,
-      "term": "natural light"
-    },
-    {
-      "id": 28,
-      "term": "floor plan"
-    },
-    {
-      "id": 29,
-      "term": "home is"
-    },
-    {
-      "id": 30,
-      "term": "the primary"
-    },
-    {
-      "id": 31,
-      "term": "the property"
-    },
-    {
-      "id": 32,
-      "term": "living space"
-    },
-    {
-      "id": 33,
-      "term": "on the"
-    },
-    {
-      "id": 34,
-      "term": "located in"
-    },
-    {
-      "id": 35,
-      "term": "home offers"
-    },
-    {
-      "id": 36,
-      "term": "features a"
-    },
-    {
-      "id": 37,
-      "term": "comfort and"
-    },
-    {
-      "id": 38,
-      "term": "for a"
-    },
-    {
-      "id": 39,
-      "term": "bedrooms and"
-    },
-    {
-      "id": 40,
-      "term": "opportunity to"
-    },
-    {
-      "id": 41,
-      "term": "the living"
-    },
-    {
-      "id": 42,
-      "term": "room with"
-    },
-    {
-      "id": 43,
-      "term": "the main"
-    },
-    {
-      "id": 44,
-      "term": "heart of"
-    },
-    {
-      "id": 45,
-      "term": "this is"
-    },
-    {
-      "id": 46,
-      "term": "living and"
-    },
-    {
-      "id": 47,
-      "term": "this property"
-    },
-    {
-      "id": 48,
-      "term": "the heart"
-    },
-    {
-      "id": 49,
-      "term": "for entertaining"
-    },
-    {
-      "id": 50,
-      "term": "stainless steel"
-    },
-    {
-      "id": 51,
-      "term": "with an"
-    },
-    {
-      "id": 52,
-      "term": "a rare"
-    },
-    {
-      "id": 53,
-      "term": "space for"
-    },
-    {
-      "id": 54,
-      "term": "the perfect"
-    },
-    {
-      "id": 55,
-      "term": "plenty of"
-    },
-    {
-      "id": 56,
-      "term": "as a"
-    },
-    {
-      "id": 57,
-      "term": "dining and"
-    },
-    {
-      "id": 58,
-      "term": "dining area"
-    },
-    {
-      "id": 59,
-      "term": "designed for"
-    },
-    {
-      "id": 60,
-      "term": "has been"
-    },
-    {
-      "id": 61,
-      "term": "a home"
-    },
-    {
-      "id": 62,
-      "term": "laundry room"
-    },
-    {
-      "id": 63,
-      "term": "family room"
-    },
-    {
-      "id": 64,
-      "term": "steel appliances"
-    },
-    {
-      "id": 65,
-      "term": "throughout the"
-    },
-    {
-      "id": 66,
-      "term": "includes a"
-    },
-    {
-      "id": 67,
-      "term": "minutes from"
-    },
-    {
-      "id": 68,
-      "term": "sq ft"
-    },
-    {
-      "id": 69,
-      "term": "pool and"
-    },
-    {
-      "id": 70,
-      "term": "blend of"
-    },
-    {
-      "id": 71,
-      "term": "room and"
-    },
-    {
-      "id": 72,
-      "term": "including a"
-    },
-    {
-      "id": 73,
-      "term": "home features"
-    },
-    {
-      "id": 74,
-      "term": "close to"
-    },
-    {
-      "id": 75,
-      "term": "home with"
-    },
-    {
-      "id": 76,
-      "term": "space and"
-    },
-    {
-      "id": 77,
-      "term": "in one"
-    },
-    {
-      "id": 78,
-      "term": "kitchen with"
-    },
-    {
-      "id": 79,
-      "term": "to own"
-    },
-    {
-      "id": 80,
-      "term": "the spacious"
-    },
-    {
-      "id": 81,
-      "term": "easy access"
-    },
-    {
-      "id": 82,
-      "term": "to this"
-    },
-    {
-      "id": 83,
-      "term": "this beautifully"
-    },
-    {
-      "id": 84,
-      "term": "and entertaining"
-    },
-    {
-      "id": 85,
-      "term": "for both"
-    },
-    {
-      "id": 86,
-      "term": "located near"
-    },
-    {
-      "id": 87,
-      "term": "conveniently located"
-    },
-    {
-      "id": 88,
-      "term": "a cozy"
-    },
-    {
-      "id": 89,
-      "term": "and dining"
-    },
-    {
-      "id": 90,
-      "term": "at the"
-    },
-    {
-      "id": 91,
-      "term": "kitchen is"
-    },
-    {
-      "id": 92,
-      "term": "the backyard"
-    },
-    {
-      "id": 93,
-      "term": "just minutes"
-    },
-    {
-      "id": 94,
-      "term": "complete with"
-    },
-    {
-      "id": 95,
-      "term": "square feet"
-    },
-    {
-      "id": 96,
-      "term": "a new"
-    },
-    {
-      "id": 97,
-      "term": "home in"
-    },
-    {
-      "id": 98,
-      "term": "include a"
-    },
-    {
-      "id": 99,
-      "term": "open floor"
-    },
-    {
-      "id": 100,
-      "term": "enjoy the"
-    },
-    {
-      "id": 101,
-      "term": "its own"
-    },
-    {
-      "id": 102,
-      "term": "granite countertops"
-    },
-    {
-      "id": 103,
-      "term": "everyday living"
-    },
-    {
-      "id": 104,
-      "term": "while the"
-    },
-    {
-      "id": 105,
-      "term": "property is"
-    },
-    {
-      "id": 106,
-      "term": "by a"
-    },
-    {
-      "id": 107,
-      "term": "a quiet"
-    },
-    {
-      "id": 108,
-      "term": "of a"
-    },
-    {
-      "id": 109,
-      "term": "in this"
-    },
-    {
-      "id": 110,
-      "term": "highlights include"
-    },
-    {
-      "id": 111,
-      "term": "featuring a"
-    },
-    {
-      "id": 112,
-      "term": "into the"
-    },
-    {
-      "id": 113,
-      "term": "an open"
-    },
-    {
-      "id": 114,
-      "term": "fireplace and"
-    },
-    {
-      "id": 115,
-      "term": "with its"
-    },
-    {
-      "id": 116,
-      "term": "of living"
-    },
-    {
-      "id": 117,
-      "term": "soaking tub"
-    },
-    {
-      "id": 118,
-      "term": "quartz countertops"
-    },
-    {
-      "id": 119,
-      "term": "with the"
-    },
-    {
-      "id": 120,
-      "term": "or a"
-    },
-    {
-      "id": 121,
-      "term": "primary bedroom"
-    },
-    {
-      "id": 122,
-      "term": "entertaining the"
-    },
-    {
-      "id": 123,
-      "term": "privacy and"
-    },
-    {
-      "id": 124,
-      "term": "shopping dining"
-    },
-    {
-      "id": 125,
-      "term": "views of"
-    },
-    {
-      "id": 126,
-      "term": "covered patio"
-    },
-    {
-      "id": 127,
-      "term": "kitchen features"
-    },
-    {
-      "id": 128,
-      "term": "is the"
-    },
-    {
-      "id": 129,
-      "term": "living area"
-    },
-    {
-      "id": 130,
-      "term": "shopping and"
-    },
-    {
-      "id": 131,
-      "term": "closet and"
-    },
-    {
-      "id": 132,
-      "term": "creating a"
-    },
-    {
-      "id": 133,
-      "term": "rare opportunity"
-    },
-    {
-      "id": 134,
-      "term": "vaulted ceilings"
-    },
-    {
-      "id": 135,
-      "term": "thoughtfully designed"
-    },
-    {
-      "id": 136,
-      "term": "additional highlights"
-    },
-    {
-      "id": 137,
-      "term": "appliances and"
-    },
-    {
-      "id": 138,
-      "term": "mountain views"
-    },
-    {
-      "id": 139,
-      "term": "your own"
-    },
-    {
-      "id": 140,
-      "term": "for the"
-    },
-    {
-      "id": 141,
-      "term": "great room"
-    },
-    {
-      "id": 142,
-      "term": "room for"
-    },
-    {
-      "id": 143,
-      "term": "a separate"
-    },
-    {
-      "id": 144,
-      "term": "offers the"
-    },
-    {
-      "id": 145,
-      "term": "recessed lighting"
-    },
-    {
-      "id": 146,
-      "term": "of this"
-    },
-    {
-      "id": 147,
-      "term": "own a"
-    },
-    {
-      "id": 148,
-      "term": "a full"
-    },
-    {
-      "id": 149,
-      "term": "to enjoy"
-    },
-    {
-      "id": 150,
-      "term": "a true"
-    },
-    {
-      "id": 151,
-      "term": "to your"
-    },
-    {
-      "id": 152,
-      "term": "whether you"
-    },
-    {
-      "id": 153,
-      "term": "attached garage"
-    },
-    {
-      "id": 154,
-      "term": "home office"
-    },
-    {
-      "id": 155,
-      "term": "kitchen and"
-    },
-    {
-      "id": 156,
-      "term": "for your"
-    },
-    {
-      "id": 157,
-      "term": "the community"
-    },
-    {
-      "id": 158,
-      "term": "perfect blend"
-    },
-    {
-      "id": 159,
-      "term": "garage with"
-    },
-    {
-      "id": 160,
-      "term": "just a"
-    },
-    {
-      "id": 161,
-      "term": "step inside"
-    },
-    {
-      "id": 162,
-      "term": "views and"
-    },
-    {
-      "id": 163,
-      "term": "and spa"
-    },
-    {
-      "id": 164,
-      "term": "spacious living"
-    },
-    {
-      "id": 165,
-      "term": "into a"
-    },
-    {
-      "id": 166,
-      "term": "you ll"
-    },
-    {
-      "id": 167,
-      "term": "for guests"
-    },
-    {
-      "id": 168,
-      "term": "living areas"
-    },
-    {
-      "id": 169,
-      "term": "your private"
-    },
-    {
-      "id": 170,
-      "term": "an expansive"
-    },
-    {
-      "id": 171,
-      "term": "an additional"
-    },
-    {
-      "id": 172,
-      "term": "light and"
-    },
-    {
-      "id": 173,
-      "term": "outdoor living"
-    },
-    {
-      "id": 174,
-      "term": "there is"
-    },
-    {
-      "id": 175,
-      "term": "countertops and"
-    },
-    {
-      "id": 176,
-      "term": "s most"
-    },
-    {
-      "id": 177,
-      "term": "cabinetry and"
-    },
-    {
-      "id": 178,
-      "term": "amenities including"
-    },
-    {
-      "id": 179,
-      "term": "living spaces"
-    },
-    {
-      "id": 180,
-      "term": "feet of"
-    },
-    {
-      "id": 181,
-      "term": "area and"
-    },
-    {
-      "id": 182,
-      "term": "an oversized"
-    },
-    {
-      "id": 183,
-      "term": "the expansive"
-    },
-    {
-      "id": 184,
-      "term": "ceilings and"
-    },
-    {
-      "id": 185,
-      "term": "along with"
-    },
-    {
-      "id": 186,
-      "term": "home has"
-    },
-    {
-      "id": 187,
-      "term": "residence offers"
-    },
-    {
-      "id": 188,
-      "term": "this stunning"
-    },
-    {
-      "id": 189,
-      "term": "full bathroom"
-    },
-    {
-      "id": 190,
-      "term": "living in"
-    },
-    {
-      "id": 191,
-      "term": "situated on"
-    },
-    {
-      "id": 192,
-      "term": "this residence"
-    },
-    {
-      "id": 193,
-      "term": "a peaceful"
-    },
-    {
-      "id": 194,
-      "term": "inside the"
-    },
-    {
-      "id": 195,
-      "term": "has a"
-    },
-    {
-      "id": 196,
-      "term": "opens to"
-    },
-    {
-      "id": 197,
-      "term": "entertaining or"
-    },
-    {
-      "id": 198,
-      "term": "flooring and"
-    },
-    {
-      "id": 199,
-      "term": "dining room"
-    },
-    {
-      "id": 200,
-      "term": "space with"
-    }
-  ]
+    "metadata": {
+        "description": "Real estate terminology taxonomy across 8 categories.",
+        "total_terms": 200
+    },
+    "terms": [
+        {
+            "id": "term_001",
+            "term": "living room",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_002",
+            "term": "primary suite",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_003",
+            "term": "laundry room",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_004",
+            "term": "family room",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_005",
+            "term": "dining room",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_006",
+            "term": "great room",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_007",
+            "term": "home office",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_008",
+            "term": "primary bedroom",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_009",
+            "term": "full bathroom",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_010",
+            "term": "guest bedroom",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_011",
+            "term": "bonus room",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_012",
+            "term": "mudroom",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_013",
+            "term": "sunroom",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_014",
+            "term": "powder room",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_015",
+            "term": "basement",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_016",
+            "term": "attic",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_017",
+            "term": "loft",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_018",
+            "term": "foyer",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_019",
+            "term": "entryway",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_020",
+            "term": "master bathroom",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_021",
+            "term": "media room",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_022",
+            "term": "playroom",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_023",
+            "term": "rec room",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_024",
+            "term": "utility room",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_025",
+            "term": "formal dining",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_026",
+            "term": "breakfast nook",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_027",
+            "term": "study",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_028",
+            "term": "wine cellar",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_029",
+            "term": "library",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_030",
+            "term": "guest house",
+            "category": "Room Types"
+        },
+        {
+            "id": "term_031",
+            "term": "natural light",
+            "category": "Interior Features"
+        },
+        {
+            "id": "term_032",
+            "term": "floor plan",
+            "category": "Interior Features"
+        },
+        {
+            "id": "term_033",
+            "term": "vaulted ceilings",
+            "category": "Interior Features"
+        },
+        {
+            "id": "term_034",
+            "term": "open floor",
+            "category": "Interior Features"
+        },
+        {
+            "id": "term_035",
+            "term": "recessed lighting",
+            "category": "Interior Features"
+        },
+        {
+            "id": "term_036",
+            "term": "soaking tub",
+            "category": "Interior Features"
+        },
+        {
+            "id": "term_037",
+            "term": "walk-in closet",
+            "category": "Interior Features"
+        },
+        {
+            "id": "term_038",
+            "term": "smart home",
+            "category": "Interior Features"
+        },
+        {
+            "id": "term_039",
+            "term": "central air",
+            "category": "Interior Features"
+        },
+        {
+            "id": "term_040",
+            "term": "fireplace",
+            "category": "Interior Features"
+        },
+        {
+            "id": "term_041",
+            "term": "crown molding",
+            "category": "Interior Features"
+        },
+        {
+            "id": "term_042",
+            "term": "french doors",
+            "category": "Interior Features"
+        },
+        {
+            "id": "term_043",
+            "term": "skylights",
+            "category": "Interior Features"
+        },
+        {
+            "id": "term_044",
+            "term": "ceiling fan",
+            "category": "Interior Features"
+        },
+        {
+            "id": "term_045",
+            "term": "window treatments",
+            "category": "Interior Features"
+        },
+        {
+            "id": "term_046",
+            "term": "custom built-ins",
+            "category": "Interior Features"
+        },
+        {
+            "id": "term_047",
+            "term": "wainscoting",
+            "category": "Interior Features"
+        },
+        {
+            "id": "term_048",
+            "term": "dual vanities",
+            "category": "Interior Features"
+        },
+        {
+            "id": "term_049",
+            "term": "high ceilings",
+            "category": "Interior Features"
+        },
+        {
+            "id": "term_050",
+            "term": "spacious living",
+            "category": "Interior Features"
+        },
+        {
+            "id": "term_051",
+            "term": "open concept",
+            "category": "Interior Features"
+        },
+        {
+            "id": "term_052",
+            "term": "security system",
+            "category": "Interior Features"
+        },
+        {
+            "id": "term_053",
+            "term": "tankless water heater",
+            "category": "Interior Features"
+        },
+        {
+            "id": "term_054",
+            "term": "energy efficient",
+            "category": "Interior Features"
+        },
+        {
+            "id": "term_055",
+            "term": "stainless steel",
+            "category": "Kitchen & Appliances"
+        },
+        {
+            "id": "term_056",
+            "term": "steel appliances",
+            "category": "Kitchen & Appliances"
+        },
+        {
+            "id": "term_057",
+            "term": "kitchen island",
+            "category": "Kitchen & Appliances"
+        },
+        {
+            "id": "term_058",
+            "term": "gas range",
+            "category": "Kitchen & Appliances"
+        },
+        {
+            "id": "term_059",
+            "term": "double oven",
+            "category": "Kitchen & Appliances"
+        },
+        {
+            "id": "term_060",
+            "term": "walk-in pantry",
+            "category": "Kitchen & Appliances"
+        },
+        {
+            "id": "term_061",
+            "term": "custom cabinetry",
+            "category": "Kitchen & Appliances"
+        },
+        {
+            "id": "term_062",
+            "term": "wine fridge",
+            "category": "Kitchen & Appliances"
+        },
+        {
+            "id": "term_063",
+            "term": "breakfast bar",
+            "category": "Kitchen & Appliances"
+        },
+        {
+            "id": "term_064",
+            "term": "dishwasher",
+            "category": "Kitchen & Appliances"
+        },
+        {
+            "id": "term_065",
+            "term": "refrigerator",
+            "category": "Kitchen & Appliances"
+        },
+        {
+            "id": "term_066",
+            "term": "microwave",
+            "category": "Kitchen & Appliances"
+        },
+        {
+            "id": "term_067",
+            "term": "garbage disposal",
+            "category": "Kitchen & Appliances"
+        },
+        {
+            "id": "term_068",
+            "term": "range hood",
+            "category": "Kitchen & Appliances"
+        },
+        {
+            "id": "term_069",
+            "term": "farmhouse sink",
+            "category": "Kitchen & Appliances"
+        },
+        {
+            "id": "term_070",
+            "term": "pot filler",
+            "category": "Kitchen & Appliances"
+        },
+        {
+            "id": "term_071",
+            "term": "eat-in kitchen",
+            "category": "Kitchen & Appliances"
+        },
+        {
+            "id": "term_072",
+            "term": "chef's kitchen",
+            "category": "Kitchen & Appliances"
+        },
+        {
+            "id": "term_073",
+            "term": "smart refrigerator",
+            "category": "Kitchen & Appliances"
+        },
+        {
+            "id": "term_074",
+            "term": "induction cooktop",
+            "category": "Kitchen & Appliances"
+        },
+        {
+            "id": "term_075",
+            "term": "butler pantry",
+            "category": "Kitchen & Appliances"
+        },
+        {
+            "id": "term_076",
+            "term": "soft close drawers",
+            "category": "Kitchen & Appliances"
+        },
+        {
+            "id": "term_077",
+            "term": "under cabinet lighting",
+            "category": "Kitchen & Appliances"
+        },
+        {
+            "id": "term_078",
+            "term": "granite countertops",
+            "category": "Materials & Finishes"
+        },
+        {
+            "id": "term_079",
+            "term": "quartz countertops",
+            "category": "Materials & Finishes"
+        },
+        {
+            "id": "term_080",
+            "term": "hardwood floors",
+            "category": "Materials & Finishes"
+        },
+        {
+            "id": "term_081",
+            "term": "luxury vinyl",
+            "category": "Materials & Finishes"
+        },
+        {
+            "id": "term_082",
+            "term": "ceramic tile",
+            "category": "Materials & Finishes"
+        },
+        {
+            "id": "term_083",
+            "term": "marble floors",
+            "category": "Materials & Finishes"
+        },
+        {
+            "id": "term_084",
+            "term": "carpet",
+            "category": "Materials & Finishes"
+        },
+        {
+            "id": "term_085",
+            "term": "subway tile",
+            "category": "Materials & Finishes"
+        },
+        {
+            "id": "term_086",
+            "term": "brick exterior",
+            "category": "Materials & Finishes"
+        },
+        {
+            "id": "term_087",
+            "term": "stucco",
+            "category": "Materials & Finishes"
+        },
+        {
+            "id": "term_088",
+            "term": "hardie board",
+            "category": "Materials & Finishes"
+        },
+        {
+            "id": "term_089",
+            "term": "exposed brick",
+            "category": "Materials & Finishes"
+        },
+        {
+            "id": "term_090",
+            "term": "wood beams",
+            "category": "Materials & Finishes"
+        },
+        {
+            "id": "term_091",
+            "term": "engineered hardwood",
+            "category": "Materials & Finishes"
+        },
+        {
+            "id": "term_092",
+            "term": "slate tile",
+            "category": "Materials & Finishes"
+        },
+        {
+            "id": "term_093",
+            "term": "travertine",
+            "category": "Materials & Finishes"
+        },
+        {
+            "id": "term_094",
+            "term": "butcher block",
+            "category": "Materials & Finishes"
+        },
+        {
+            "id": "term_095",
+            "term": "concrete floors",
+            "category": "Materials & Finishes"
+        },
+        {
+            "id": "term_096",
+            "term": "shiplap",
+            "category": "Materials & Finishes"
+        },
+        {
+            "id": "term_097",
+            "term": "laminate flooring",
+            "category": "Materials & Finishes"
+        },
+        {
+            "id": "term_098",
+            "term": "glass backsplash",
+            "category": "Materials & Finishes"
+        },
+        {
+            "id": "term_099",
+            "term": "brass hardware",
+            "category": "Materials & Finishes"
+        },
+        {
+            "id": "term_100",
+            "term": "matte black fixtures",
+            "category": "Materials & Finishes"
+        },
+        {
+            "id": "term_101",
+            "term": "covered patio",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_102",
+            "term": "pool and",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_103",
+            "term": "attached garage",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_104",
+            "term": "fenced backyard",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_105",
+            "term": "front porch",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_106",
+            "term": "outdoor kitchen",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_107",
+            "term": "fire pit",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_108",
+            "term": "deck",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_109",
+            "term": "sprinkler system",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_110",
+            "term": "landscaped",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_111",
+            "term": "rv parking",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_112",
+            "term": "storage shed",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_113",
+            "term": "pergola",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_114",
+            "term": "balcony",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_115",
+            "term": "cul-de-sac",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_116",
+            "term": "corner lot",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_117",
+            "term": "mature trees",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_118",
+            "term": "paver driveway",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_119",
+            "term": "swimming pool",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_120",
+            "term": "hot tub",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_121",
+            "term": "screened porch",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_122",
+            "term": "garden",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_123",
+            "term": "water feature",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_124",
+            "term": "outdoor fireplace",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_125",
+            "term": "gazebo",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_126",
+            "term": "wrap-around porch",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_127",
+            "term": "greenhouse",
+            "category": "Exterior & Outdoor"
+        },
+        {
+            "id": "term_128",
+            "term": "mountain views",
+            "category": "Location & Views"
+        },
+        {
+            "id": "term_129",
+            "term": "shopping dining",
+            "category": "Location & Views"
+        },
+        {
+            "id": "term_130",
+            "term": "easy access",
+            "category": "Location & Views"
+        },
+        {
+            "id": "term_131",
+            "term": "close to",
+            "category": "Location & Views"
+        },
+        {
+            "id": "term_132",
+            "term": "minutes from",
+            "category": "Location & Views"
+        },
+        {
+            "id": "term_133",
+            "term": "conveniently located",
+            "category": "Location & Views"
+        },
+        {
+            "id": "term_134",
+            "term": "ocean view",
+            "category": "Location & Views"
+        },
+        {
+            "id": "term_135",
+            "term": "lakefront",
+            "category": "Location & Views"
+        },
+        {
+            "id": "term_136",
+            "term": "city views",
+            "category": "Location & Views"
+        },
+        {
+            "id": "term_137",
+            "term": "wooded lot",
+            "category": "Location & Views"
+        },
+        {
+            "id": "term_138",
+            "term": "waterfront",
+            "category": "Location & Views"
+        },
+        {
+            "id": "term_139",
+            "term": "park access",
+            "category": "Location & Views"
+        },
+        {
+            "id": "term_140",
+            "term": "highway access",
+            "category": "Location & Views"
+        },
+        {
+            "id": "term_141",
+            "term": "downtown",
+            "category": "Location & Views"
+        },
+        {
+            "id": "term_142",
+            "term": "quiet neighborhood",
+            "category": "Location & Views"
+        },
+        {
+            "id": "term_143",
+            "term": "scenic views",
+            "category": "Location & Views"
+        },
+        {
+            "id": "term_144",
+            "term": "walking distance",
+            "category": "Location & Views"
+        },
+        {
+            "id": "term_145",
+            "term": "near schools",
+            "category": "Location & Views"
+        },
+        {
+            "id": "term_146",
+            "term": "golf course view",
+            "category": "Location & Views"
+        },
+        {
+            "id": "term_147",
+            "term": "private greenbelt",
+            "category": "Location & Views"
+        },
+        {
+            "id": "term_148",
+            "term": "hill country views",
+            "category": "Location & Views"
+        },
+        {
+            "id": "term_149",
+            "term": "panoramic views",
+            "category": "Location & Views"
+        },
+        {
+            "id": "term_150",
+            "term": "river access",
+            "category": "Location & Views"
+        },
+        {
+            "id": "term_151",
+            "term": "single family",
+            "category": "Property Types"
+        },
+        {
+            "id": "term_152",
+            "term": "townhouse",
+            "category": "Property Types"
+        },
+        {
+            "id": "term_153",
+            "term": "condo",
+            "category": "Property Types"
+        },
+        {
+            "id": "term_154",
+            "term": "duplex",
+            "category": "Property Types"
+        },
+        {
+            "id": "term_155",
+            "term": "multi family",
+            "category": "Property Types"
+        },
+        {
+            "id": "term_156",
+            "term": "new construction",
+            "category": "Property Types"
+        },
+        {
+            "id": "term_157",
+            "term": "ranch style",
+            "category": "Property Types"
+        },
+        {
+            "id": "term_158",
+            "term": "two story",
+            "category": "Property Types"
+        },
+        {
+            "id": "term_159",
+            "term": "split level",
+            "category": "Property Types"
+        },
+        {
+            "id": "term_160",
+            "term": "historic home",
+            "category": "Property Types"
+        },
+        {
+            "id": "term_161",
+            "term": "farmhouse",
+            "category": "Property Types"
+        },
+        {
+            "id": "term_162",
+            "term": "contemporary",
+            "category": "Property Types"
+        },
+        {
+            "id": "term_163",
+            "term": "mid-century modern",
+            "category": "Property Types"
+        },
+        {
+            "id": "term_164",
+            "term": "victorian",
+            "category": "Property Types"
+        },
+        {
+            "id": "term_165",
+            "term": "colonial",
+            "category": "Property Types"
+        },
+        {
+            "id": "term_166",
+            "term": "craftsman",
+            "category": "Property Types"
+        },
+        {
+            "id": "term_167",
+            "term": "penthouse",
+            "category": "Property Types"
+        },
+        {
+            "id": "term_168",
+            "term": "studio",
+            "category": "Property Types"
+        },
+        {
+            "id": "term_169",
+            "term": "triplex",
+            "category": "Property Types"
+        },
+        {
+            "id": "term_170",
+            "term": "fourplex",
+            "category": "Property Types"
+        },
+        {
+            "id": "term_171",
+            "term": "manufactured home",
+            "category": "Property Types"
+        },
+        {
+            "id": "term_172",
+            "term": "cabin",
+            "category": "Property Types"
+        },
+        {
+            "id": "term_173",
+            "term": "cottage",
+            "category": "Property Types"
+        },
+        {
+            "id": "term_174",
+            "term": "estate",
+            "category": "Property Types"
+        },
+        {
+            "id": "term_175",
+            "term": "investment property",
+            "category": "Property Types"
+        },
+        {
+            "id": "term_176",
+            "term": "turnkey",
+            "category": "Property Types"
+        },
+        {
+            "id": "term_177",
+            "term": "clubhouse",
+            "category": "Amenities & Community"
+        },
+        {
+            "id": "term_178",
+            "term": "fitness center",
+            "category": "Amenities & Community"
+        },
+        {
+            "id": "term_179",
+            "term": "gated community",
+            "category": "Amenities & Community"
+        },
+        {
+            "id": "term_180",
+            "term": "tennis courts",
+            "category": "Amenities & Community"
+        },
+        {
+            "id": "term_181",
+            "term": "community pool",
+            "category": "Amenities & Community"
+        },
+        {
+            "id": "term_182",
+            "term": "walking trails",
+            "category": "Amenities & Community"
+        },
+        {
+            "id": "term_183",
+            "term": "playground",
+            "category": "Amenities & Community"
+        },
+        {
+            "id": "term_184",
+            "term": "hoa",
+            "category": "Amenities & Community"
+        },
+        {
+            "id": "term_185",
+            "term": "guard gated",
+            "category": "Amenities & Community"
+        },
+        {
+            "id": "term_186",
+            "term": "golf course",
+            "category": "Amenities & Community"
+        },
+        {
+            "id": "term_187",
+            "term": "pet friendly",
+            "category": "Amenities & Community"
+        },
+        {
+            "id": "term_188",
+            "term": "concierge",
+            "category": "Amenities & Community"
+        },
+        {
+            "id": "term_189",
+            "term": "valet parking",
+            "category": "Amenities & Community"
+        },
+        {
+            "id": "term_190",
+            "term": "elevator",
+            "category": "Amenities & Community"
+        },
+        {
+            "id": "term_191",
+            "term": "business center",
+            "category": "Amenities & Community"
+        },
+        {
+            "id": "term_192",
+            "term": "dog park",
+            "category": "Amenities & Community"
+        },
+        {
+            "id": "term_193",
+            "term": "basketball court",
+            "category": "Amenities & Community"
+        },
+        {
+            "id": "term_194",
+            "term": "bbq area",
+            "category": "Amenities & Community"
+        },
+        {
+            "id": "term_195",
+            "term": "lounge",
+            "category": "Amenities & Community"
+        },
+        {
+            "id": "term_196",
+            "term": "biking trails",
+            "category": "Amenities & Community"
+        },
+        {
+            "id": "term_197",
+            "term": "community park",
+            "category": "Amenities & Community"
+        },
+        {
+            "id": "term_198",
+            "term": "resort style",
+            "category": "Amenities & Community"
+        },
+        {
+            "id": "term_199",
+            "term": "spa",
+            "category": "Amenities & Community"
+        },
+        {
+            "id": "term_200",
+            "term": "sauna",
+            "category": "Amenities & Community"
+        }
+    ]
 }
