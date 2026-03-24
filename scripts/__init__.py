@@ -4,7 +4,7 @@ This package groups loading, cleaning, extraction, and query parsing modules.
 '''
 
 from .data_cleaner import TextCleaner
-from .data_extractor import EntityExtractor, evaluate, generate_predictions, main
+from .data_extractor import EntityExtractor, evaluate, generate_predictions
 from .query_parser import QueryParser
 
 __all__ = [
@@ -12,6 +12,5 @@ __all__ = [
     'EntityExtractor',
     'evaluate',
     'generate_predictions',
-    'main',
     'QueryParser'
 ]
