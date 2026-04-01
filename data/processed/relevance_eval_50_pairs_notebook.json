@@ -1,0 +1,402 @@
+[
+  {
+    "query": "I am looking for a townhouse in Chicago.",
+    "method": "semantic",
+    "listing_id": "1128358347",
+    "city": "Spring Valley",
+    "score": 0.5616015195846558,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a townhouse in Chicago.",
+    "method": "bm25",
+    "listing_id": "1145260729",
+    "city": "San Mateo",
+    "score": 10.062969391512802,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a condo in Austin.",
+    "method": "semantic",
+    "listing_id": "1136852393",
+    "city": "Long Beach",
+    "score": 0.5635092854499817,
+    "relevance": 1
+  },
+  {
+    "query": "I am looking for a condo in Austin.",
+    "method": "bm25",
+    "listing_id": "1145260729",
+    "city": "San Mateo",
+    "score": 10.062969391512802,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a duplex in Miami.",
+    "method": "semantic",
+    "listing_id": "1097077426",
+    "city": "Los Angeles",
+    "score": 0.5917587280273438,
+    "relevance": 1
+  },
+  {
+    "query": "I am looking for a duplex in Miami.",
+    "method": "bm25",
+    "listing_id": "1151022342",
+    "city": "Los Angeles",
+    "score": 11.140594438892983,
+    "relevance": 1
+  },
+  {
+    "query": "I am looking for a penthouse in Chicago.",
+    "method": "semantic",
+    "listing_id": "1114978856",
+    "city": "San Diego",
+    "score": 0.4851625859737396,
+    "relevance": 1
+  },
+  {
+    "query": "I am looking for a penthouse in Chicago.",
+    "method": "bm25",
+    "listing_id": "1145260729",
+    "city": "San Mateo",
+    "score": 10.062969391512802,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a penthouse in Miami.",
+    "method": "semantic",
+    "listing_id": "1114978856",
+    "city": "San Diego",
+    "score": 0.5383545160293579,
+    "relevance": 1
+  },
+  {
+    "query": "I am looking for a penthouse in Miami.",
+    "method": "bm25",
+    "listing_id": "1145260729",
+    "city": "San Mateo",
+    "score": 10.062969391512802,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a townhouse in Austin.",
+    "method": "semantic",
+    "listing_id": "1134000295",
+    "city": "Pacoima",
+    "score": 0.5696455240249634,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a townhouse in Austin.",
+    "method": "bm25",
+    "listing_id": "1145260729",
+    "city": "San Mateo",
+    "score": 10.062969391512802,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a single family home in Austin.",
+    "method": "semantic",
+    "listing_id": "1147651015",
+    "city": "Antioch",
+    "score": 0.515950083732605,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a single family home in Austin.",
+    "method": "bm25",
+    "listing_id": "1145260729",
+    "city": "San Mateo",
+    "score": 12.072076100005008,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a single family home in Seattle.",
+    "method": "semantic",
+    "listing_id": "1088223897",
+    "city": "Los Angeles",
+    "score": 0.49627742171287537,
+    "relevance": 1
+  },
+  {
+    "query": "I am looking for a single family home in Seattle.",
+    "method": "bm25",
+    "listing_id": "1145260729",
+    "city": "San Mateo",
+    "score": 12.072076100005008,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a duplex in New York.",
+    "method": "semantic",
+    "listing_id": "1102512611",
+    "city": "Oakland",
+    "score": 0.5976806879043579,
+    "relevance": 1
+  },
+  {
+    "query": "I am looking for a duplex in New York.",
+    "method": "bm25",
+    "listing_id": "1151022342",
+    "city": "Los Angeles",
+    "score": 11.140594438892983,
+    "relevance": 1
+  },
+  {
+    "query": "I am looking for a condo in Seattle.",
+    "method": "semantic",
+    "listing_id": "1088223897",
+    "city": "Los Angeles",
+    "score": 0.5592978000640869,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a condo in Seattle.",
+    "method": "bm25",
+    "listing_id": "1145260729",
+    "city": "San Mateo",
+    "score": 10.062969391512802,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a single family home in New York.",
+    "method": "semantic",
+    "listing_id": "1147457757",
+    "city": "Hollister",
+    "score": 0.5292147994041443,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a single family home in New York.",
+    "method": "bm25",
+    "listing_id": "1145260729",
+    "city": "San Mateo",
+    "score": 12.072076100005008,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a penthouse in New York.",
+    "method": "semantic",
+    "listing_id": "1137135804",
+    "city": "Los Angeles",
+    "score": 0.5120635032653809,
+    "relevance": 1
+  },
+  {
+    "query": "I am looking for a penthouse in New York.",
+    "method": "bm25",
+    "listing_id": "1145260729",
+    "city": "San Mateo",
+    "score": 10.062969391512802,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a duplex in Austin.",
+    "method": "semantic",
+    "listing_id": "1102512611",
+    "city": "Oakland",
+    "score": 0.6076699495315552,
+    "relevance": 1
+  },
+  {
+    "query": "I am looking for a duplex in Austin.",
+    "method": "bm25",
+    "listing_id": "1151022342",
+    "city": "Los Angeles",
+    "score": 11.140594438892983,
+    "relevance": 1
+  },
+  {
+    "query": "I am looking for a penthouse in Austin.",
+    "method": "semantic",
+    "listing_id": "1114978856",
+    "city": "San Diego",
+    "score": 0.5116336941719055,
+    "relevance": 1
+  },
+  {
+    "query": "I am looking for a penthouse in Austin.",
+    "method": "bm25",
+    "listing_id": "1145260729",
+    "city": "San Mateo",
+    "score": 10.062969391512802,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a townhouse in Seattle.",
+    "method": "semantic",
+    "listing_id": "1149405399",
+    "city": "Foster City",
+    "score": 0.5438830852508545,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a townhouse in Seattle.",
+    "method": "bm25",
+    "listing_id": "1145260729",
+    "city": "San Mateo",
+    "score": 10.062969391512802,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a townhouse in Miami.",
+    "method": "semantic",
+    "listing_id": "1145140310",
+    "city": "Gardena",
+    "score": 0.5628769993782043,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a townhouse in Miami.",
+    "method": "bm25",
+    "listing_id": "1145260729",
+    "city": "San Mateo",
+    "score": 10.062969391512802,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a condo in Miami.",
+    "method": "semantic",
+    "listing_id": "1132089895",
+    "city": "El Sobrante",
+    "score": 0.5818063020706177,
+    "relevance": 1
+  },
+  {
+    "query": "I am looking for a condo in Miami.",
+    "method": "bm25",
+    "listing_id": "1145260729",
+    "city": "San Mateo",
+    "score": 10.062969391512802,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a condo in Chicago.",
+    "method": "semantic",
+    "listing_id": "1147395718",
+    "city": "San Jose",
+    "score": 0.5714171528816223,
+    "relevance": 1
+  },
+  {
+    "query": "I am looking for a condo in Chicago.",
+    "method": "bm25",
+    "listing_id": "1145260729",
+    "city": "San Mateo",
+    "score": 10.062969391512802,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a townhouse in New York.",
+    "method": "semantic",
+    "listing_id": "1128358347",
+    "city": "Spring Valley",
+    "score": 0.5784436464309692,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a townhouse in New York.",
+    "method": "bm25",
+    "listing_id": "1145260729",
+    "city": "San Mateo",
+    "score": 10.062969391512802,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a single family home in Miami.",
+    "method": "semantic",
+    "listing_id": "1147457757",
+    "city": "Hollister",
+    "score": 0.4990941286087036,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a single family home in Miami.",
+    "method": "bm25",
+    "listing_id": "1145260729",
+    "city": "San Mateo",
+    "score": 12.072076100005008,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a penthouse in Seattle.",
+    "method": "semantic",
+    "listing_id": "1147419877",
+    "city": "Los Angeles",
+    "score": 0.5204021334648132,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a penthouse in Seattle.",
+    "method": "bm25",
+    "listing_id": "1145260729",
+    "city": "San Mateo",
+    "score": 10.062969391512802,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a single family home in Chicago.",
+    "method": "semantic",
+    "listing_id": "1146374380",
+    "city": "Los Angeles",
+    "score": 0.5277852416038513,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a single family home in Chicago.",
+    "method": "bm25",
+    "listing_id": "1145260729",
+    "city": "San Mateo",
+    "score": 12.072076100005008,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a condo in New York.",
+    "method": "semantic",
+    "listing_id": "1142332116",
+    "city": "Palm Springs",
+    "score": 0.589407205581665,
+    "relevance": 1
+  },
+  {
+    "query": "I am looking for a condo in New York.",
+    "method": "bm25",
+    "listing_id": "1145260729",
+    "city": "San Mateo",
+    "score": 10.062969391512802,
+    "relevance": 0
+  },
+  {
+    "query": "I am looking for a duplex in Chicago.",
+    "method": "semantic",
+    "listing_id": "1102512611",
+    "city": "Oakland",
+    "score": 0.5437254905700684,
+    "relevance": 1
+  },
+  {
+    "query": "I am looking for a duplex in Chicago.",
+    "method": "bm25",
+    "listing_id": "1151022342",
+    "city": "Los Angeles",
+    "score": 11.140594438892983,
+    "relevance": 1
+  },
+  {
+    "query": "I am looking for a duplex in Seattle.",
+    "method": "semantic",
+    "listing_id": "1102512611",
+    "city": "Oakland",
+    "score": 0.5669492483139038,
+    "relevance": 1
+  },
+  {
+    "query": "I am looking for a duplex in Seattle.",
+    "method": "bm25",
+    "listing_id": "1151022342",
+    "city": "Los Angeles",
+    "score": 11.140594438892983,
+    "relevance": 1
+  }
+]

@@ -25,6 +25,10 @@ This folder contains the project's data processing and NLP pipeline scripts.
 - `query_parser.py`: Defines `QueryParser` for query normalization, tokenization, and parsing.
 - `__init__.py`: Exposes `QueryParser` package import.
 
+### `scripts/semantic_search`
+- `semantic_search.py`: Defines `SemanticSearcher` (sentence embedding + FAISS retrieval).
+- `__init__.py`: Exposes semantic search utilities.
+
 ### `scripts` (root package)
 - `__init__.py`: Declares top-level subpackages (`data_loading`, `data_cleaner`, `data_extractor`, `query_parser`).
 
