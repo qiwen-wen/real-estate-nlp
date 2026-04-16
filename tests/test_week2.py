@@ -1,6 +1,6 @@
 import pytest
 import pandas as pd
-from scripts.text_cleaning import TextCleaner
+from engine.text_cleaning import TextCleaner
 
 @pytest.fixture
 def cleaner():

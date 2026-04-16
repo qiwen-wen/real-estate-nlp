@@ -1,4 +1,4 @@
-from query_parser import QueryParser, SchemaValidator
+from search.query_parser import QueryParser, SchemaValidator
 
 parser = QueryParser()
 # Note: You'll need to create a dummy data/schema.json first!

@@ -3,8 +3,8 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'scripts')))
 
 import pandas as pd
-from semantic_search import SemanticSearcher
-from bm25_search import BM25Searcher
+from search.semantic_search import SemanticSearcher
+from search.bm25_search import BM25Searcher
 
 def run_evaluation():
     # 1. Load Data
