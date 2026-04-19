@@ -111,4 +111,4 @@ signals = extractor.extract_signals(listing_record)
 - Built during a 12-week NLP internship with **IDX Exchange**
 - Working with real MLS data from active California property listings
 
-> ⚠️ Raw MLS data is not included in this repo as it contains proprietary IDX Exchange listing data. Contact IDX Exchange for data access.
+> ⚠️ Raw MLS data is not included in this repo as it contains proprietary IDX Exchange listing data.
