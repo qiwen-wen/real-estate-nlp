@@ -1,0 +1,36 @@
+{
+  "mean_rougeL_f1": 0.4211,
+  "median_rougeL_f1": 0.4004,
+  "min_rougeL_f1": 0.2482,
+  "max_rougeL_f1": 0.764,
+  "pass_threshold": 0.4,
+  "passed": true,
+  "n_evaluated": 30,
+  "n_skipped": 0,
+  "per_stratum": {
+    "generic_amenities_only": {
+      "mean_f1": 0.4902,
+      "n": 5
+    },
+    "high_value_amenities": {
+      "mean_f1": 0.3481,
+      "n": 5
+    },
+    "long_listing": {
+      "mean_f1": 0.4142,
+      "n": 5
+    },
+    "rich_entities": {
+      "mean_f1": 0.4428,
+      "n": 5
+    },
+    "short_listing": {
+      "mean_f1": 0.4561,
+      "n": 5
+    },
+    "sparse_entities": {
+      "mean_f1": 0.375,
+      "n": 5
+    }
+  }
+}

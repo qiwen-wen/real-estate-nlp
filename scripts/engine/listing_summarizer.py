@@ -1,6 +1,26 @@
+"""
+ListingSummarizer — Week 8 deliverable.
+
+Extractive 2-3 sentence summarizer for MLS listing remarks. Follows the
+starter algorithm from the project brief: tokenize the remarks into
+sentences, score each by entity mentions and position, return top-N in
+their original order so the summary reads naturally.
+
+Bugfixes vs the literal starter code:
+  - Word-boundary matching for numeric entities (so '3' inside '$300,000'
+    doesn't count as a bedroom mention)
+  - Iterates over all entities the EntityExtractor produces (bedrooms,
+    bathrooms, sqft, price, amenities) rather than just bedrooms+pool
+  - Strips periods from abbreviations like 'sq. ft.' before tokenizing
+    (otherwise NLTK splits sentences mid-phrase)
+
+Designed to consume the output of EntityExtractor.extract_all(), which
+returns: bedrooms, bathrooms, price, sqft, amenities.
+"""
+
 import re
-import os
 import math
+import os
 import nltk
 
 
@@ -18,43 +38,18 @@ def _ensure_nltk():
                 continue
 
 
-# Amenities that are genuinely informative for a buyer scanning summaries.
-# Generic filler like "natural light" or "easy access" is intentionally excluded
-# because nearly every listing mentions it — scoring them rewards fluff.
-HIGH_VALUE_AMENITIES = {
-    'pool', 'spa', 'hot tub', 'garage', 'car garage', 'view', 'ocean view',
-    'mountain views', 'hardwood floors', 'granite countertops', 'quartz countertops',
-    'gourmet kitchen', 'master suite', 'walk-in closet', 'fireplace',
-    'backyard', 'patio', 'deck', 'balcony', 'solar', 'central air',
-    'tennis courts', 'gated', 'cul-de-sac', 'waterfront',
-}
-
-
 class ListingSummarizer:
-    """
-    Generates 2-3 sentence summaries of MLS listing remarks for use in
-    search results and email alerts. Uses an extractive approach: scores
-    each sentence by entity mentions, amenity hits, and position, then
-    returns the top-N in their original order so the summary reads naturally.
+    """Extractive summarizer for real-estate listing remarks."""
 
-    Designed to consume the output of EntityExtractor.extract_all(), which
-    returns a dict with keys: bedrooms, bathrooms, price, sqft, amenities.
-    """
-
-    def __init__(self, num_sentences=2, min_sentence_words=4):
+    def __init__(self, num_sentences=2):
         """
         Args:
             num_sentences: How many sentences the summary should contain.
-            min_sentence_words: Sentences shorter than this are filtered out
-                (drops headers like "Key Features:" that score artificially high).
+                Default is 2 to match the starter brief; pass 3 for fuller
+                summaries when more context is desired.
         """
         _ensure_nltk()
         self.num_sentences = num_sentences
-        self.min_sentence_words = min_sentence_words
-
-    # ------------------------------------------------------------------
-    # Scoring helpers
-    # ------------------------------------------------------------------
 
     @staticmethod
     def _is_present(value):
@@ -66,69 +61,26 @@ class ListingSummarizer:
         return True
 
     @staticmethod
-    def _mentions_number(sentence, value):
+    def _normalize_abbreviations(text):
         """
-        Word-boundary check for a numeric entity in a sentence.
-        Avoids the bug where '3' inside '$300,000' counts as a bedroom mention.
+        Pre-process the text to stop NLTK from splitting on abbreviation periods.
+        Without this, 'offering 3,015 sq. ft. of living space' becomes two
+        bad fragments: 'offering 3,015 sq.' and 'ft. of living space'.
         """
-        if value is None:
-            return False
-        # Match the integer portion (3.0 -> "3", 2.5 stays "2.5")
-        if isinstance(value, float) and value.is_integer():
-            num_str = str(int(value))
-        else:
-            num_str = str(value)
-        return re.search(rf'\b{re.escape(num_str)}\b', sentence) is not None
-
-    def _score_sentence(self, sentence, index, entities):
-        """Score a single sentence based on position + entity coverage."""
-        score = 0
-        lower = sentence.lower()
-
-        # Position bonus: first sentence is usually the headline
-        if index == 0:
-            score += 2
-
-        # Numeric entity mentions
-        if self._is_present(entities.get('bedrooms')) and \
-                self._mentions_number(sentence, entities['bedrooms']):
-            # Extra weight if "bed" appears nearby — disambiguates from sqft
-            if 'bed' in lower or 'br' in lower:
-                score += 2
-            else:
-                score += 1
-
-        if self._is_present(entities.get('bathrooms')) and \
-                self._mentions_number(sentence, entities['bathrooms']):
-            if 'bath' in lower or 'ba' in lower:
-                score += 2
-            else:
-                score += 1
-
-        if self._is_present(entities.get('sqft')) and \
-                self._mentions_number(sentence, entities['sqft']):
-            score += 2
-
-        # Price mention — usually shows up as $XXX,XXX
-        if self._is_present(entities.get('price')) and '$' in sentence:
-            score += 2
-
-        # Amenity hits — tiered weighting so generic filler doesn't dominate
-        amenities = entities.get('amenities') or []
-        for amenity in amenities:
-            if not isinstance(amenity, str):
-                continue
-            if re.search(rf'\b{re.escape(amenity.lower())}\b', lower):
-                if amenity.lower() in HIGH_VALUE_AMENITIES:
-                    score += 2
-                else:
-                    score += 0.5  # generic amenity, small bonus
-
-        return score
-
-    # ------------------------------------------------------------------
-    # Public API
-    # ------------------------------------------------------------------
+        replacements = [
+            (r'\bsq\.\s*ft\.', 'sqft'),
+            (r'\bSq\.\s*Ft\.', 'sqft'),
+            (r'\bSQ\.\s*FT\.', 'sqft'),
+            (r'\bsq\.', 'sq'),
+            (r'\bft\.', 'ft'),
+            (r'\bSt\.', 'St'),
+            (r'\bAve\.', 'Ave'),
+            (r'\bBlvd\.', 'Blvd'),
+            (r'\bD\.R\.', 'DR'),
+        ]
+        for pattern, replacement in replacements:
+            text = re.sub(pattern, replacement, text)
+        return text
 
     def extractive_summary(self, remarks, entities, num_sentences=None):
         """
@@ -136,11 +88,12 @@ class ListingSummarizer:
 
         Args:
             remarks: The raw listing description (string).
-            entities: Dict from EntityExtractor.extract_all().
+            entities: Dict from EntityExtractor.extract_all() with keys
+                bedrooms, bathrooms, price, sqft, amenities.
             num_sentences: Override the default sentence count for this call.
 
         Returns:
-            A string containing the top N sentences in original order.
+            A string containing the top-N sentences in their original order.
             Returns "" if remarks is empty or unusable.
         """
         if not remarks or not isinstance(remarks, str):
@@ -148,32 +101,59 @@ class ListingSummarizer:
 
         n = num_sentences if num_sentences is not None else self.num_sentences
 
-        # Normalize line breaks (your data has \r\r\n artifacts) before tokenizing
+        # Clean and normalize before tokenizing
         cleaned = re.sub(r'\s+', ' ', remarks).strip()
+        cleaned = self._normalize_abbreviations(cleaned)
         if not cleaned:
             return ""
 
         sentences = nltk.sent_tokenize(cleaned)
-
-        # Drop very short sentences (headers, fragments) before scoring
-        sentences = [s for s in sentences if len(s.split()) >= self.min_sentence_words]
-
         if not sentences:
             return ""
 
-        # If the listing is already short, just return it as-is
+        # If listing has fewer sentences than requested, return all of them
         if len(sentences) <= n:
             return ' '.join(sentences)
 
-        scored = [
-            (self._score_sentence(s, i, entities or {}), i, s)
-            for i, s in enumerate(sentences)
-        ]
+        # Score each sentence by entity mentions and position
+        entities = entities or {}
+        scores = []
+        for i, sent in enumerate(sentences):
+            score = 0
+            sent_lower = sent.lower()
 
-        # Pick top N by score, then restore original order using the index
-        top = sorted(scored, key=lambda x: x[0], reverse=True)[:n]
+            # First sentence bonus (the headline)
+            if i == 0:
+                score += 2
+
+            # Numeric entity mentions — word boundary prevents false matches
+            for key in ('bedrooms', 'bathrooms', 'sqft'):
+                value = entities.get(key)
+                if self._is_present(value):
+                    if isinstance(value, float) and value.is_integer():
+                        num_str = str(int(value))
+                    else:
+                        num_str = str(value)
+                    if re.search(rf'\b{re.escape(num_str)}\b', sent):
+                        score += 1
+
+            # Price typically shows up as $XXX,XXX
+            if self._is_present(entities.get('price')) and '$' in sent:
+                score += 1
+
+            # Amenity hits — flat scoring (matches starter code style)
+            amenities = entities.get('amenities') or []
+            for amenity in amenities:
+                if not isinstance(amenity, str):
+                    continue
+                if re.search(rf'\b{re.escape(amenity.lower())}\b', sent_lower):
+                    score += 1
+
+            scores.append((score, i, sent))
+
+        # Pick top-N by score, then restore original order using the index
+        top = sorted(scores, key=lambda x: x[0], reverse=True)[:n]
         top_in_order = sorted(top, key=lambda x: x[1])
-
         return ' '.join(s for _, _, s in top_in_order)
 
 
@@ -189,7 +169,6 @@ if __name__ == "__main__":
     summarizer = ListingSummarizer(num_sentences=2)
 
     for _, row in df.head(3).iterrows():
-        # amenities was saved as a string repr of a list — eval it back
         amenities = ast.literal_eval(row['amenities']) if isinstance(row['amenities'], str) else []
         entities = {
             'bedrooms': row['bedrooms'],
