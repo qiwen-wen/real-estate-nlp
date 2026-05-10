@@ -175,15 +175,25 @@ class SchemaValidator:
 
     def validate(self, filters: dict) -> tuple:
         errors = []
+        allowed_cities = self.schema.get('allowed_cities', [])
+        ranges = self.schema.get('ranges', {})
 
-        if 'city' in filters and filters['city'] not in self.schema.get('valid_cities', []):
+        if 'city' in filters and allowed_cities and filters['city'] not in allowed_cities:
             errors.append(f"City '{filters['city']}' not found in database.")
 
         if 'price_max' in filters:
-            price_cfg = self.schema.get('price_range', {})
+            price_cfg = ranges.get('price', {})
             p_min = price_cfg.get('min', 0)
-            p_max = price_cfg.get('max', 100000000)
+            p_max = price_cfg.get('max', 100_000_000)
             if not (p_min <= filters['price_max'] <= p_max):
                 errors.append(f"Price {filters['price_max']} is outside typical range.")
+
+        for key in ('bedrooms', 'bedrooms_min'):
+            if key in filters:
+                bed_cfg = ranges.get('beds', {})
+                b_min = bed_cfg.get('min', 0)
+                b_max = bed_cfg.get('max', 20)
+                if not (b_min <= filters[key] <= b_max):
+                    errors.append(f"Bedroom count {filters[key]} is outside typical range.")
 
         return len(errors) == 0, errors

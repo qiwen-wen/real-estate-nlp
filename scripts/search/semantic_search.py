@@ -1,6 +1,7 @@
 import os
 import faiss
 import numpy as np
+import json 
 from sentence_transformers import SentenceTransformer
 
 class SemanticSearcher:
@@ -69,3 +70,27 @@ class SemanticSearcher:
                 results.append((self.listings[i], scores[0][j]))
         
         return results
+    
+    def save_index(self, index_path, listings_path):
+        """Persist the FAISS index and listings to disk."""
+        if self.index is None:
+            raise RuntimeError("Cannot save: index has not been built yet.")
+        
+        os.makedirs(os.path.dirname(index_path), exist_ok=True)
+        faiss.write_index(self.index, index_path)
+        
+        with open(listings_path, 'w', encoding='utf-8') as f:
+            json.dump(self.listings, f)
+        print(f"Saved index to {index_path} and listings to {listings_path}")
+
+    def load_index(self, index_path, listings_path):
+        """Load a previously-saved FAISS index and listings from disk."""
+        if not os.path.exists(index_path) or not os.path.exists(listings_path):
+            raise FileNotFoundError(
+                f"Index artifacts not found. Run pipelines/build_search_index.py first."
+            )
+        
+        self.index = faiss.read_index(index_path)
+        with open(listings_path, 'r', encoding='utf-8') as f:
+            self.listings = json.load(f)
+        print(f"Loaded index with {len(self.listings)} listings from {index_path}")

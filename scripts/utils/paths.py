@@ -28,6 +28,10 @@ SEARCH_EVAL_CSV     = os.path.join(RESULTS, 'search_evaluation_results.csv')
 RELEVANCE_JSON      = os.path.join(RESULTS, 'relevance_eval_50_pairs_notebook.json')
 INTENT_JSON         = os.path.join(RESULTS, 'intent_classifier_metrics.json')
 
+# FAISS artifacts (built by scripts/pipelines/build_search_index.py, loaded by the API)
+FAISS_INDEX_BIN       = os.path.join(DATA_MODELS, 'faiss_index.bin')
+INDEXED_LISTINGS_JSON = os.path.join(DATA_MODELS, 'indexed_listings.json')
+
 def ensure_dirs():
     """Call this at the start of any pipeline to make sure all folders exist."""
     for path in [DATA_RAW, DATA_INTERIM, DATA_PROCESSED, DATA_MODELS, RESULTS]:
