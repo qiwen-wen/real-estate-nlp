@@ -32,8 +32,11 @@ COPY results/extraction_results.csv /app/results/extraction_results.csv
 
 EXPOSE 8000
 
-# Healthcheck pings /health every 30s
+# Healthcheck pings /health every 30s. Honor $PORT for hosts (Render, Fly, etc.)
+# that inject their own port; fall back to 8000 for local docker run.
 HEALTHCHECK --interval=30s --timeout=5s --start-period=60s --retries=3 \
-    CMD curl -fsS http://localhost:8000/health || exit 1
+    CMD curl -fsS http://localhost:${PORT:-8000}/health || exit 1
 
-CMD ["uvicorn", "scripts.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Shell form so $PORT expands at runtime (the JSON-array exec form does NOT
+# perform env var substitution).
+CMD sh -c "uvicorn scripts.api.main:app --host 0.0.0.0 --port ${PORT:-8000}"

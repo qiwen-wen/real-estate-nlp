@@ -1,0 +1,1 @@
+{"timestamp": "2026-05-17T06:18:55.080255+00:00", "query": "3 bed 2 bath under 700k in San Diego", "intent": "ready_to_buy", "confidence": 0.9624, "sql_ready": true, "filters": {"price_max": 700000, "bedrooms": 3, "city": "San Diego"}, "top_k": 5, "result_count": 5, "parse_ms": 108.12454205006361, "semantic_ms": 2467.250582994893, "keyword_ms": 161.80654102936387}
