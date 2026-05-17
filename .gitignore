@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 data/raw/rets_property.csv
 CLAUDE.md
+DEMO_SCRIPT.md
