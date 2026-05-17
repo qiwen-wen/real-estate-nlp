@@ -37,6 +37,7 @@ EXPOSE 8000
 HEALTHCHECK --interval=30s --timeout=5s --start-period=60s --retries=3 \
     CMD curl -fsS http://localhost:${PORT:-8000}/health || exit 1
 
-# Shell form so $PORT expands at runtime (the JSON-array exec form does NOT
-# perform env var substitution).
-CMD sh -c "uvicorn scripts.api.main:app --host 0.0.0.0 --port ${PORT:-8000}"
+# Use JSON exec form with an explicit `sh -c` so `$PORT` is expanded at runtime
+# (Render injects PORT=10000; the bare exec form does NOT perform env var
+# substitution). Falls back to 8000 for `docker run` locally.
+CMD ["sh", "-c", "uvicorn scripts.api.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
