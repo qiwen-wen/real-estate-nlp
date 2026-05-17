@@ -22,6 +22,7 @@ Run locally:
   → http://localhost:8000/docs for the auto-generated OpenAPI UI
 """
 
+import os
 from contextlib import asynccontextmanager
 
 from fastapi import Depends, FastAPI, HTTPException, Request
@@ -34,6 +35,7 @@ from starlette.responses import JSONResponse
 
 from scripts.api import cache
 from scripts.api.dependencies import (
+    get_bm25_searcher,
     get_compliance_checker,
     get_entity_extractor,
     get_intent_classifier,
@@ -55,6 +57,8 @@ from scripts.api.models import (
     HealthResponse,
     IntentRequest,
     IntentResponse,
+    KeywordSearchRequest,
+    KeywordSearchResponse,
     ParseQueryRequest,
     ParseQueryResponse,
     SearchRequest,
@@ -68,13 +72,17 @@ from scripts.engine.entity_extractor import EntityExtractor
 from scripts.engine.intent_classifier import IntentClassifier
 from scripts.engine.listing_summarizer import ListingSummarizer
 from scripts.engine.signal_extractor import SignalExtractor
+from scripts.search.bm25_search import BM25Searcher
 from scripts.search.query_parser import QueryParser, SchemaValidator
 from scripts.search.semantic_search import SemanticSearcher
 
 API_VERSION = "1.0.0"
 
-# slowapi: per-IP rate limiter. The default applies to every route.
-limiter = Limiter(key_func=get_remote_address, default_limits=["10/second"])
+# slowapi: per-IP rate limiter. Default leaves headroom for a single Streamlit
+# Cloud worker (one IP, ~13 calls per user search). Override via env when
+# tightening for production or loosening for load tests.
+RATE_LIMIT = os.getenv("API_RATE_LIMIT", "60/second")
+limiter = Limiter(key_func=get_remote_address, default_limits=[RATE_LIMIT])
 
 
 @asynccontextmanager
@@ -136,6 +144,7 @@ def root():
         "endpoints": [
             "/health",
             "/search",
+            "/search-keyword",
             "/parse-query",
             "/classify-intent",
             "/extract-entities",
@@ -349,6 +358,38 @@ def search(
         params=result.get("params"),
         schema_errors=result["schema_errors"],
         message=result["message"],
+        results=items,
+        count=result["count"],
+        cached=was_cached,
+    )
+
+
+# ── Keyword search (BM25 baseline for side-by-side comparisons) ────────────
+@app.post("/search-keyword", response_model=KeywordSearchResponse)
+def search_keyword(
+    request: Request,
+    body: KeywordSearchRequest,
+    bm25: BM25Searcher = Depends(get_bm25_searcher),
+):
+    key = cache.cache_key("search-keyword", body.top_k, body.query)
+
+    def _do() -> dict:
+        hits = bm25.search(body.query, top_k=body.top_k)
+        results = []
+        for i, hit in enumerate(hits):
+            listing = hit["listing"]
+            text = listing.get("remarks") if isinstance(listing, dict) else str(listing)
+            results.append({
+                "rank": i + 1,
+                "score": float(hit["score"]),
+                "remarks": text or "",
+            })
+        return {"query": body.query, "results": results, "count": len(results)}
+
+    result, was_cached = cache.get_or_compute(key, _do)
+    items = [SearchResultItem(**r) for r in result["results"]]
+    return KeywordSearchResponse(
+        query=result["query"],
         results=items,
         count=result["count"],
         cached=was_cached,

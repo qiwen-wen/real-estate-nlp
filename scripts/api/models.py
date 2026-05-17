@@ -39,6 +39,19 @@ class SearchResponse(BaseModel):
     cached: bool = False
 
 
+# ── Keyword (BM25) search ──────────────────────────────────────────────────
+class KeywordSearchRequest(BaseModel):
+    query: str = Field(..., min_length=1, max_length=500)
+    top_k: int = Field(default=10, ge=1, le=50)
+
+
+class KeywordSearchResponse(BaseModel):
+    query: str
+    results: List[SearchResultItem] = []
+    count: int = 0
+    cached: bool = False
+
+
 # ── Parse query ────────────────────────────────────────────────────────────
 class ParseQueryRequest(BaseModel):
     query: str = Field(..., min_length=1, max_length=500)

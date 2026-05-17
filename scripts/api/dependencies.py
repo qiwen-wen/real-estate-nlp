@@ -21,6 +21,7 @@ from scripts.engine.entity_extractor import EntityExtractor
 from scripts.engine.intent_classifier import IntentClassifier
 from scripts.engine.listing_summarizer import ListingSummarizer
 from scripts.engine.signal_extractor import SignalExtractor
+from scripts.search.bm25_search import BM25Searcher
 from scripts.search.query_parser import QueryParser, SchemaValidator
 from scripts.search.semantic_search import SemanticSearcher
 from scripts.utils.paths import (
@@ -68,6 +69,33 @@ def get_intent_classifier() -> IntentClassifier:
 @lru_cache(maxsize=1)
 def get_schema_validator() -> SchemaValidator:
     return SchemaValidator(schema_path=SCHEMA_JSON)
+
+
+@lru_cache(maxsize=1)
+def get_bm25_searcher() -> BM25Searcher:
+    """
+    BM25 over the *same corpus* the FAISS searcher uses so the side-by-side
+    keyword-vs-semantic comparison is apples-to-apples. Prefers the cached
+    indexed_listings.json (what FAISS actually indexed); falls back to the
+    remarks column of extraction_results.csv.
+    """
+    import json
+
+    searcher = BM25Searcher()
+    if os.path.exists(INDEXED_LISTINGS_JSON):
+        with open(INDEXED_LISTINGS_JSON, "r", encoding="utf-8") as f:
+            texts = json.load(f)
+        searcher.build_index(texts)
+        return searcher
+
+    if not os.path.exists(EXTRACTION_CSV):
+        raise FileNotFoundError(
+            f"Cannot bootstrap BM25 searcher: neither {INDEXED_LISTINGS_JSON} "
+            f"nor {EXTRACTION_CSV} exists."
+        )
+    df = pd.read_csv(EXTRACTION_CSV)
+    searcher.build_index(df["remarks"].dropna().astype(str).tolist())
+    return searcher
 
 
 @lru_cache(maxsize=1)
